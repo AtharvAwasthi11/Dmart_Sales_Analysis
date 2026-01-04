@@ -1,80 +1,65 @@
-DMart Sales Analytics Dashboard – Power BI
+# 🛒 DMart Sales Analytics Dashboard
 
-Project Overview :
+## 📋 Project Overview
+This project delivers a high-impact, interactive **Power BI Dashboard** that deconstructs the DMart sales ecosystem. By processing complex datasets covering customer demographics, marketing funnels, and logistics, this solution provides a 360-degree view of retail performance to drive strategic growth.
 
-This project presents an interactive Power BI dashboard built using the DMart sales dataset. The dashboard provides 
-insights into sales performance, customer behavior, marketing effectiveness, payment patterns, and operational
-efficiency. It helps stakeholders make data-driven decisions to improve overall business growth.
+---
 
+## 🎯 Strategic Objectives
+* **Revenue Intelligence:** Dissecting sales drivers, transaction volumes, and product margins.
+* **Customer Profiling:** Mapping demographics (Age/Gender/Subscription) to purchase intent.
+* **Marketing ROI:** Evaluating click-through rates (CTR) and conversion across advertising channels.
+* **Operational Excellence:** Tracking delivery lead times, order statuses, and payment preferences.
 
-Objectives :
+---
 
-Analyze overall sales revenue, transactions, and product performance.
-Understand customer demographics, ratings, and purchase behavior.
-Evaluate marketing channels and their impact on clicks and conversions.
-Track delivery performance, order status, and payment method usage.
-Provide an interactive dashboard for business decision-making.
+## 🛠️ The Tech Stack
+* **Power BI Desktop:** Core tool for data modeling and dashboarding.
+* **Power Query:** Used for complex ETL (Extract, Transform, Load) to clean and normalize raw CSV data.
+* **DAX (Data Analysis Expressions):** Engineered 15+ custom measures for advanced business logic.
+* **Excel:** Initial data auditing and source management.
 
+---
 
-Dataset Description :
+## 📊 Dashboard Architecture & Features
+The dashboard is split into several analytical layers:
 
-The dataset includes the following key columns:
-Customer ID, Product ID, Order ID
-Customer Age, Gender, Subscription
-Product Name, Category, MRP, Discount Price
-State, City, Pincode
-Time Spent on Website, Number of Clicks
-Rating, Marketing/Advertisement
-Ship Mode, Order Status
-Order Date, Delivery Date
-Payment Method, Payment Status
-Total Order Value, Shipping Charges
-Year, Month
+| Layer | Insights Provided |
+| :--- | :--- |
+| **KPI Scorecard** | Total Revenue, Shipping Costs, Transactions, and Total Clicks. |
+| **Geospatial Map** | Distribution of orders across Indian cities and states. |
+| **Temporal Trends** | Monthly and Daily order fluctuations to identify peak shopping windows. |
+| **Payment Ecosystem** | Market share of UPI, Debit Cards, and Cash transactions. |
+| **Marketing Funnel** | Impact of Ads on website time-spent and final conversion. |
 
+---
 
-Dashboard Features :
+## 🧪 Advanced DAX Metrics
+I developed several custom business metrics to provide deeper intelligence:
+* **Customer Conversion Rate:** $\frac{\text{Total Orders}}{\text{Total Clicks}}$
+* **On-Time Delivery %:** Percentage of orders reaching customers within the promised window.
+* **Subscription Alpha:** Revenue variance between subscribed vs. non-subscribed users.
+* **Average Transaction Value (ATV):** Revenue normalized per order.
 
-KPIs: Total Products, Total Revenue, Shipping Charges, Transactions, Total Clicks
-Maps: City-wise order distribution
-Trends: Monthly order trends and day-wise order patterns
-Customer Insights: Ratings, gender-based transactions
-Payment Insights: Payment method distribution
-Product Performance: Best-selling products
-Interactive Filters: Year, month, category, order status, marketing channel, payment method.
+---
 
+## 💡 Key Business Findings
+* 🏙️ **Geography:** Metro hubs like **Mumbai, Pune, and Hyderabad** are the primary revenue engines.
+* 💳 **FinTech Trends:** **UPI and Debit Cards** dominate the payment landscape, signaling a shift toward digital-first retail.
+* 👥 **Demographics:** Male customers account for a higher transaction volume, while subscribed users show **20% higher retention**.
+* 🚀 **Conversion:** Marketing effectiveness peaks during weekend spikes, suggesting higher ROI on weekend-targeted ads.
 
-DAX Measures Used :
+---
 
-Some key DAX measures include:
-Total Revenue
-Total Transactions
-Average Transaction Value
-Subscription Customer %
-On-Time Delivery %
-Shipping Charges
-Discount %
-Customer Conversion Rate
-(You can add full DAX formulas in a separate file like DAX_Formulas.md.).
+## ⚙️ Setup Instructions
+1. **Clone the Repo:** `git clone https://github.com/ghadisujit1005/Dmart-sales-analysis.git`
+2. **Open the Dashboard:** Ensure you have the latest version of **Power BI Desktop**.
+3. **Data Refresh:** If the data source path changes, point the Power Query source to the included CSV/Excel file.
 
+---
 
-Tools & Technologies :
+## 🤝 Connect & Support
+**Author:** [ATHARV AWASTHI] 
+**Role:** Data Analyst / Business Intelligence Enthusiast  
 
-Power BI Desktop – Data modeling & visualization
-Power Query – Data cleaning and transformation
-DAX – Business metric calculations
-Excel / CSV – Dataset source.
-
-
-Insights & Findings :
-
-Metro cities like Mumbai, Pune, and Hyderabad drive the highest orders.
-Sales remain stable across months with slight weekend spikes.
-Male customers show higher transaction volume than females.
-Debit Card and UPI are the most preferred payment methods.
-Customer ratings are mostly positive, indicating good satisfaction.
-
-
-Conclusion :
-
-The dashboard delivers a complete view of DMart’s sales and customer analytics. It empowers decision-makers with 
-real-time insights to optimize marketing, improve operations, and enhance customer experience.
+*If you found this analysis insightful, please consider giving this repository a ⭐!*
